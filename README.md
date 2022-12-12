@@ -55,3 +55,7 @@
 1. `git clone`
 2. создать `.env` с верными кредами (`.env.example` для примера)
 3. `docker-compose up --build` (сервис запуститься в контейнере и БД заполнится тестовыми данными из `mock_data.json`)
+
+
+## Актуальная схема БД
+![db_scheme.png](https://github.com/fiveh/kamaz_digital/blob/main/db_scheme.png)
