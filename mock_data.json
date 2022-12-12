@@ -1,0 +1,25 @@
+{
+  "car": [
+    {
+      "id": 1,
+      "name": "Камаз",
+      "description": "Самосвал для вывоза угля из карьера",
+      "is_active": true,
+      "created_at": "2022-12-11 20:22:23.173210"
+    },
+    {
+      "id": 2,
+      "name": "Volvo",
+      "description": "Бетономешалка",
+      "is_active": false,
+      "created_at": "2022-11-10 19:22:23.173210"
+    },
+    {
+      "id": 3,
+      "name": "Belaz",
+      "description": "Манипулятор",
+      "is_active": true,
+      "created_at": "2019-06-20 07:22:23.173210"
+    }
+  ]
+}

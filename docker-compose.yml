@@ -1,0 +1,28 @@
+version: "3.9"
+
+volumes:
+  postgres_data:
+
+services:
+  postgres:
+    image: postgres:13.4
+    environment:
+      PGDATA: /data/postgres
+    volumes:
+      - postgres_data:/data/postgres
+    ports:
+      - 5432:5432
+    env_file:
+      - .env.example
+
+  app:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    container_name: app
+    env_file:
+      - .env.example
+    ports:
+      - "8000:8000"
+    depends_on:
+      - postgres
